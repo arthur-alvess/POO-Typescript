@@ -1,6 +1,6 @@
 import { Cinema } from "./Cinema";
 import { Filme } from "./Filme";
-import {CarrinhoDeFilme, FilmeEscolhido } from "./FilmeCarrinho";
+import {CarrinhoDeFilme, FilmeEscolhido } from "./CarrinhoFilme";
 
 
 
@@ -8,10 +8,17 @@ let cine:Cinema = new Cinema('Cine Ticket');
 
 let hora1: string[] = ['14:50', '17:20', '22:30'];
 let sinopse1 = 'Simba (Donald Glover) é um jovem leão cujo destino é se tornar o rei da selva. Tudo corre bem, até que uma grande tragédia atinge sua vida mudando sua trajetória para sempre.'
-let filme1: Filme = new Filme('Rei Leão', sinopse1, hora1, 20, 'Livre','rei leao.jpg');
+let filme1: Filme = new Filme('Rei Leão', sinopse1, hora1, 10, 'Livre','rei leao.jpg');
+
 
 let sinopse2 = 'Newt Scamander (Eddie Redmayne) reencontra os queridos amigos Tina Goldstein (Katherine Waterston), Queenie Goldstein (Alison Sudol) e Jacob Kowalski (Dan Fogler). Ele é recrutado pelo seu antigo professor em Hogwarts, Alvo Dumbledore (Jude Law), para enfrentar o terrível bruxo das trevas Gellert Grindelwald (Johnny Depp), que escapou da custódia da MACUSA (Congresso Mágico dos EUA) e reúne seguidores, dividindo o mundo entre seres de magos sangue puro e seres não-mágicos.'
-let filme2: Filme = new Filme('Animais Fantásticos e os Crimes de Grindewald', sinopse2, hora1, 30, 'Livre', 'animais.jpg');
+let filme2: Filme = new Filme('Animais Fantásticos e os Crimes de Grindewald', sinopse2, hora1, 20, 'Livre', 'animais.jpg');
+
+
+let sinopse3 = 'O elenco principal conta com Rami Malek (Freddie Mercury), Ben Hardy (Roger Taylor), Gwilym Lee (Brian May) e Joseph Mazzello (John Deacon). O filme acompanha a banda desde começo até a apresentação histórica no Live Aid em 1985.'
+let filme3: Filme = new Filme('Bohemian Rhapsody', sinopse3, hora1, 15, '16','bohemian_rhapsody_ver9.jpg');
+
+
 
 cine.adicionarFilme(filme1);
 cine.adicionarFilme(filme2);
@@ -142,16 +149,20 @@ function colocarCarrinho(n:number){
 function remove(){
     document.getElementsByTagName('aside')[0].onclick = apagaFilme1;
     document.getElementsByTagName('aside')[1].onclick = apagaFilme2;
+    document.getElementsByTagName('aside')[2].onclick = apagaFilme3;
 }
 function apagaFilme1() {
     filmeEsc1.remQuant();
-    // colocarCarrinho(1);
+   
 }
 function apagaFilme2() {
     filmeEsc2.remQuant();
-    // colocarCarrinho(2);
-}
 
+}
+function apagaFilme3() {
+    filmeEsc1.remQuant();
+   
+}
 
 function addFilme1() {
     filmeEsc1.addQuant();
@@ -162,6 +173,11 @@ function addFilme2() {
     colocarCarrinho(2);
 }
 
+function addFilme3() {
+    filmeEsc2.addQuant();
+    colocarCarrinho(3);
+}
+
 function finalizaCompra() {
     let total = 0;
     for (let j = 0; j <=tam; j++){
@@ -169,7 +185,7 @@ function finalizaCompra() {
         total += valor;
     }
 
-alert(`Cada filme é R$14.00
+alert(`O filme é R$32.00
 
 O total foi R$${total}.00`)
     window.location.reload()
@@ -192,11 +208,11 @@ window.onload = function carrega(){
     filmes();
     document.getElementsByTagName('div')[1].onclick = aparecerTela;
     
-    // FINALIZAR COMPRA
+    
     document.getElementsByTagName('button')[0].onclick = finalizaCompra;
     document.getElementsByTagName('button')[1].onclick = apagaCarrinhoTotal;
 
-    // ADICIONAR no CARRINHO
+    
     document.getElementsByTagName('button')[2].onclick = addFilme1;
     document.getElementsByTagName('button')[3].onclick = addFilme2;
 
