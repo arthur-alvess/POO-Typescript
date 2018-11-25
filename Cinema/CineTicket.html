@@ -14,29 +14,34 @@ _   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sh
     
 </head>
 <body>
-    
+    <header>
     <div class="menu">
-        <a href=""><h1 class="Cine Ticket"></h1></a>
-        <nav>
+        <display:flex>
+            <a href=""><h1 class="Cine Ticket"></h1></a>
+                <nav>
+          
                 <ul class='itens-menu'>
-                        <a href="#"><li>Filmes em cartaz</li></a>
-                        <a href="#"><li>Sobre</li></a>
-                        <a href="#"><li>Local</li></a>
+                        <li><a href="#">Filmes em cartaz</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <h7>Carrinho de filmes</h7>
+                        <p><img class='displayed' src="./imagens/carrinho.png" alt="Carrinho" style="width: 3%;"></p>
+                </display:flex>
                 </ul>
         </nav>
     </div>
-
+</header>
   <div class='carrinho'>
-        <img src="./imagens/carrinho.png" alt="Carrinho"> 
-            <img src="./imagens/rei leao.jpg" alt="Rei Leão">
-        <img src="./imagens/animais.png" alt="Animais Fantásticos e os Crimes de Grindewald">
+      
+        <p><img src="./imagens/rei leao.jpg" alt="Rei Leão" style="width: 40%; height: 5%; right: 30%;"></p>
+        <p><img src="./imagens/animais.png" alt="Animais Fantásticos e os Crimes de Grindewald" style="width: 40%;"></p>
+        <p><img class="displayed" src="./imagens/bohemian_rhapsody_ver9.jpg" alt="Bohemian Rhapsody"style"width:50%" height="55%"></p>
  </div>
     <div class='clear'>
         
     </div>
 
     <div class='filme_escolhido'>
-        <h5>Carrinho de filmes</h5>
+   
         <div class='area-filme'>
             <div class='area-carrinho'>
         
@@ -59,7 +64,7 @@ _   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sh
     <!-- Footer -->
     <footer>
         <div>
-            <p>Copyright 2018 <a href="#">Cine Ticket</a>. Todos os direitos reservados. <br>Feito com HTML5,CSS3, Bootstrap <i class="icon-heart3"></i> e por <a href="https://github.com/arthur-alvess" target="_blank">Arthur Alves</a> IFRN 2018.2 - POO <a href="https://github.com/arthur-alvess" target="_blank"></a></p>
+            <p>Copyright 2018 <a href="#">Cine Ticket</a>. Todos os direitos reservados. <br>Feito com HTML5,CSS3, Bootstrap e Jquery <i class="icon-heart3"></i>por <a href="https://github.com/arthur-alvess" target="_blank">Arthur Alves</a> IFRN 2018.2 - POO <a href="https://github.com/arthur-alvess" target="_blank"></a></p>
         </div>
     <script src="node_modules/bootstrap/js/src/index.js"></script>
     </footer>
