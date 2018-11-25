@@ -1,0 +1,231 @@
+body {
+    line-height: 1.5;
+}
+
+.clear {
+    clear: both;
+}
+
+.menu {
+    padding: 3vmin;
+    height: 12vmin;
+    background-color: #b0b0b0;
+}
+
+.menu h1 {
+    color: black;
+    font-size: 2rem;
+    text-shadow: 3px 3px 1px rgb(226, 224, 224);
+    width: 194px;
+    cursor: pointer;
+    /* transition: 1s; */
+}
+
+menu h1:hover {
+    text-shadow: 4.5px 4.5px 2px rgb(226, 224, 224);
+}
+
+.menu a {
+    text-decoration: none;
+    cursor: default
+}
+
+nav {
+    position: absolute;
+    top: 4vmin;
+    right: 4vmin;
+    font-size: 2ex;
+}
+
+ul.itens-menu li {
+    color: #fff;
+    list-style: none;
+    float: left;
+    margin-right: 2vmin;
+    text-transform: lowercase;
+}
+
+ul.itens-menu li:hover {
+    color: #1d1d1d;
+}
+
+/* Botão carrinho */
+
+div.carrinho {
+    position: fixed;
+    right: 3vmin;
+    top: 20vmin;
+    width: 50px;
+    height: 50px;
+    border-radius: 40px;
+    background-color: #b0b0b0;
+    padding: 5px;
+    cursor: pointer;
+    box-shadow: 2.5px 2.5px 4px rgba(1, 1, 1, .5);
+    z-index: 999;
+}
+
+img {
+    width: 40px;
+    height: 40px;
+}
+
+div.carrinho:hover {
+    box-shadow: 1.5px 1.5px 4px rgba(1, 1, 1, .5);
+}
+
+/* Configurações dos Filmes */
+
+.filmes {
+    margin: 50px auto;
+    width: 150vmin;
+    padding: 0 auto;
+    /* background-color: bisque; */
+    list-style: none;
+}
+
+.todos-filme {
+    line-height: 1;
+    width: 850px;
+    height: 230px;
+    margin: 1vmin;
+    /* color: #3c110b; */
+    font-weight: bolder;
+    padding-top: 13px;
+    /* border: 1px solid rgba(1, 1, 1, .5); */
+    box-shadow: 1.5px 1.5px 4px rgba(1, 1, 1, .5);
+}
+
+.todos-filme:hover {
+    box-shadow: .5px .5px 2px rgba(1, 1, 1, .5);
+}
+
+div.todos-filme div {
+    display: block;
+}
+
+/* Informações sobre os filmes */
+
+div.info-filme {
+    margin-left: 285px;
+    width: 200px;
+    height: 180px;
+    text-align: justify;
+    /* background-color: #b0b0b0 */
+}
+
+button {
+    height: 30px;
+    margin: 0 0 0 300px;
+}
+
+div.todos-filme:hover div {
+    opacity: 1;
+}
+
+button {
+    position: relative;
+}
+
+/* Div dos filmes */
+
+.filme_escolhido {
+    position: absolute;
+    top: 20vmin;
+    left: 70vmin;
+    width: 300px;
+    height: 200px;
+    background-color: rgba(155, 114, 114, 0.966);
+    z-index: 1;
+    text-align: center;
+    font-weight: bolder;
+    opacity: 0;
+    z-index: -5;
+    box-shadow: 3.5px 3.5px 2px rgba(1, 1, 1, .5);
+    border: 1.5px solid rgb(226, 224, 224);
+}
+
+.area-filme {
+    border-top: 1px solid rgba(1, 1, 1, .5);
+    height: 330px;
+}
+
+.filme-carrinho {
+    height: 90px;
+    
+    padding-left: 95px;
+    text-align: justify;
+    background-repeat: no-repeat;
+    background-size: 88px 88px;
+    line-height: 1.5;
+}
+
+.filme-carrinho p {
+    margin-bottom: 2px;
+}
+
+.filme-carrinho span {
+    display: block;
+    width: 15px;
+    height: 15px;
+    padding-left: 4.7px;
+    font-weight: bolder;
+    background-color: #e93f2c;
+    border-radius: 10px;
+    font-size: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.filme-carrinho section {
+    display: block;
+    float: left;
+    /* background-color: #b0b0b0; */
+}
+
+.filme-carrinho aside {
+    display: block;
+    float: right;
+    width: 27px;
+    padding: 4px 0 5px 5px;
+    /* background-color: #b0b0b0; */
+}
+.botoes{
+    margin-left: 75px;
+}
+.FinalizaCompra {
+    margin: 10px 5px 0 0;
+}
+
+.apagaTudo {
+    margin: 10px 0 0 0;
+}
+
+.filme_escolhido button{
+    float: left;
+}
+
+footer {
+    margin-top: 50px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #b0b0b0;
+    padding: 3vmin;
+    padding-top: 2vmin;
+    font-size: 1.3ch;
+}
+
+#footer {
+    background: #222831;
+    padding: 60px 0 40px;
+  }
+  #footer p {
+    color: rgba(255, 255, 255, 0.3);
+    letter-spacing: 1px;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+  #footer p a {
+    color: rgba(255, 255, 255, 0.5);
+  }
