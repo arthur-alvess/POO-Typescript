@@ -1,0 +1,12 @@
+"use strict";
+exports.__esModule = true;
+var Contato_1 = require("./Contato");
+var Endereco_1 = require("./Endereco");
+var Telefone_1 = require("./Telefone");
+var endereco = new Endereco_1.Endereco('Alameda Passo da Pátria', 49, 'Vila Naval', 'Barro Vermelho', 'Natal');
+var telefone = new Telefone_1.Telefone(['9999-9999', '8888-8888', '7777-7777']);
+var contato = new Contato_1.Contato('Diego Araujo', endereco, telefone);
+// console.log(contato.getNome());
+// console.log(contato.getEndereco());
+// console.log(contato.getTelefone());
+console.log(contato.mostrarContato());

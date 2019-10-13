@@ -1,0 +1,15 @@
+"use strict";
+exports.__esModule = true;
+var Hospede_1 = require("./Hospede");
+var Aposento_1 = require("./Aposento");
+var Hospedagem_1 = require("./Hospedagem");
+var hosp1 = new Hospede_1.Hospede('Fulano', '555', '8888-8888', 'Rua da Luz');
+var hosp2 = new Hospede_1.Hospede('Sicrano', '4444', '9999-9999', 'Rua Aurora');
+var ap1 = new Aposento_1.Aposento(1, 1, 85.00, [hosp1, hosp2]);
+var h1 = new Hospedagem_1.Hospedagem(ap1);
+console.log('-----------------');
+console.log("Dados da Hospedagem:");
+console.log(ap1);
+console.log('-----------------');
+console.log("Valor Total da Hospedagem: R$ " + h1.calcular_total(5) + ",00");
+console.log('-----------------');
